@@ -1,54 +1,77 @@
-# DjangoProject  
-📚 A full‑stack Django web application built with Python and Django (version 5.x).  
-This repository supports user authentication, blog posting with images, and more.
+# DjangoProject 🐍📰
+
+A full-stack Django web app with user registration, login, profile management, and blog posting features. Built using Python, Django 5+, SQLite, and Bootstrap.
 
 ---
 
-## Table of Contents  
-- [About](#about)  
-- [Features](#features)  
-- [Technologies](#technologies)  
-- [Setup & Installation](#setup--installation)  
-- [Usage](#usage)  
-- [Folder Structure](#folder-structure)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Author](#author)  
+## 🔧 Features
+
+- User registration and login system
+- Profile page with image upload
+- Blog creation with thumbnail image
+- Blog listing with pagination
+- Blog search functionality
+- Django admin interface
+- Media file (image) upload support
 
 ---
 
-## About  
-This project is a Django‑based web application that allows users to register, log in, update profiles, and create blog posts with images. It uses the Django admin for backend management and has front‑end templates for blog listing and detail views.  
+## 🚀 Tech Stack
+
+- **Backend:** Django 5.x, Python 3.13
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Database:** SQLite (default)
+- **Image handling:** Pillow
+- **Templating:** Django Templates
+- **Auth:** Django’s built-in authentication
 
 ---
 
-## Features  
-- ✅ User registration, login, logout  
-- ✅ Profile update (including uploading a profile image)  
-- ✅ Blog creation with title, slug, body text, thumbnail image  
-- ✅ Blog listing with pagination  
-- ✅ Search functionality for blog posts  
-- ✅ Admin dashboard via Django’s built‑in admin  
-- ✅ Static files (CSS/JS) and media (uploaded images) support  
+## 🛠 Installation & Setup
 
----
-
-## Technologies  
-- **Python 3.13**  
-- **Django 5.x**  
-- **SQLite** (default database)  
-- **Pillow** for image handling  
-- HTML5, CSS3, JavaScript (for front‑end)  
-- Virtual environment setup via `venv`  
-
----
-
-## Setup & Installation  
-**Clone the repository**  
 ```bash
-git clone https://github.com/AriaHassanzadeh/DjangoProject.git  
-cd DjangoProject  
+# 1. Clone the repository
+git clone https://github.com/AriaHassanzadeh/DjangoProject.git
+cd DjangoProject
+
+# 2. Set up virtual environment
+python -m venv .venv
+# Activate:
+# Windows CMD
+.venv\Scripts\activate.bat
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+# Linux/macOS
+source .venv/bin/activate
+
+# 3. Install dependencies
+pip install django pillow
+
+# 4. Run migrations
+python manage.py makemigrations
+python manage.py migrate
+
+# 5. Create superuser
+python manage.py createsuperuser
+
+# 6. Start server
+python manage.py runserver
 
 
-Run development server :
-python manage.py runserver 
+📁 Folder Structure :
+
+DjangoProject/
+├── myproject/         # Main Django project
+├── blogapp/           # Blog app
+├── core/              # User auth & profiles
+├── templates/         # HTML templates
+├── static/            # CSS and JS
+├── media/             # Uploaded images
+├── manage.py
+└── README.md
+
+
+👤 Author
+
+Aria Hassanzadeh
+📧 ariahassanzadeh6@gmail.com
