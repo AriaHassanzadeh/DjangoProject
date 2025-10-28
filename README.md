@@ -4,15 +4,21 @@ A full-stack Django web app with user registration, login, profile management, a
 
 ---
 
+
+> 🔗 **Live Demo**: [https://djangoproject-2-5t9m.onrender.com](https://djangoproject-2-5t9m.onrender.com)
+
+
 ## 🔧 Features
 
-- User registration and login system
-- Profile page with image upload
-- Blog creation with thumbnail image
-- Blog listing with pagination
-- Blog search functionality
-- Django admin interface
-- Media file (image) upload support
+- ✅ User Registration, Login & Logout (Custom Auth Forms)
+- 📝 Blog Posts with Slug-based URLs
+- 🖼️ Image Upload Support (via `ImageField`)
+- 🗂️ Blog Categories
+- 🔍 Keyword-based Search
+- 👤 User Profile Page + Profile Update
+- ⏱️ Post Date Tracking (Created & Updated)
+- 🌍 Responsive Frontend with Bootstrap
+- 📄 Paginated Post List View
 
 ---
 
@@ -56,6 +62,33 @@ python manage.py createsuperuser
 
 # 6. Start server
 python manage.py runserver
+
+🔐 Admin Panel :
+/admin
+
+# ----------------------------------------------------------------------------
+
+🌐 Deployment on Render
+
+This project is deployed on Render :
+Python 3.13
+
+Gunicorn as WSGI server
+
+requirements.txt for dependencies
+
+build.sh script (optional if needed)
+
+Make sure to:
+
+Set ALLOWED_HOSTS in settings.py
+
+Configure static/media file handling
+
+Add environment variables like SECRET_KEY
+
+
+# ---------------------------------------------------------------------------
 
 
 📁 Folder Structure :
